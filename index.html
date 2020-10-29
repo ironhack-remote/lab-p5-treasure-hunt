@@ -8,11 +8,22 @@
     <title>Splatoon</title>
   </head>
   <body>
-    <h1>Splatoon</h1>
-    <div id="canvas"></div>
+    <div class="main">
+      <div class="left">
+        <h1>Splatoon</h1>
+        <h2>With a spooky twist!</h2>
+        <div class="score">Score: <span></span></div>
+        <button class="restart">Restart</button>
+        <div class="game-over">Game over!!!</div>
+      </div>
+      <div id="canvas"></div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
-    <script src="src/constants.js"></script>
-    <script src="src/game.js"></script>
-    <script src="src/main.js"></script>
+    <script src="/src/constants.js"></script>
+    <script src="/src/Ghost.js"></script>
+    <script src="/src/Treasure.js"></script>
+    <script src="/src/Player.js"></script>
+    <script src="/src/game.js"></script>
+    <script src="/src/main.js"></script>
   </body>
 </html>

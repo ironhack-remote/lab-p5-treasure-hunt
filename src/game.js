@@ -16,7 +16,7 @@ class Game {
       }
     }
   }
-  checkFound(player, treasure) {
+  checkFound() {
     if (player.col == treasure.col && player.row == treasure.row) {
       console.log("colided");
       noLoop();

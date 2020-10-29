@@ -17,6 +17,6 @@ class Treasure {
   }
 }
 
-function randomize(argument) {
-  return Math.floor(Math.random() * WIDTH - argument);
+function randomize() {
+  return Math.floor(Math.random() * 10) * SQUARE_SIDE;
 }

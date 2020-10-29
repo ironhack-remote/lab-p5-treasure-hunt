@@ -18,4 +18,14 @@ function draw() {
   player.draw();
   player.keyPressed();
   treasure.drawTreasure();
+  game.checkFound(player, treasure);
 }
+const button = document.querySelector("button");
+
+button.onclick = () => {
+  console.log("clicking");
+  player.col = 0;
+  player.row = 0;
+  treasure.setRandomPosition();
+  loop();
+};

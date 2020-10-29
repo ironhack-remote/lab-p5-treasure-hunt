@@ -16,4 +16,11 @@ class Game {
       }
     }
   }
+  checkFound(player, treasure) {
+    if (player.col == treasure.col && player.row == treasure.row) {
+      console.log("colided");
+      noLoop();
+      // reset();
+    }
+  }
 }

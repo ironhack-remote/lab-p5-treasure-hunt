@@ -1,6 +1,7 @@
 class Game {
   constructor(){
-    this.player = new Player (0, 0);
+    this.player1 = new Player (0, 0);
+    this.player2 = new Player (900,900);
     this.treasure = new Treasure;
   }
   drawGrid() {
@@ -14,8 +15,12 @@ class Game {
     }
   }
 
-  drawPlayer (){
-    this.player.draw();
+  drawPlayerOne (){
+    this.player1.draw();
+  }
+
+  drawPlayerTwo (){
+    this.player2.draw();
   }
 
   drawTreasure(){

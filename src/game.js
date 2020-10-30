@@ -17,8 +17,8 @@ class Game {
     draw() {
       this.player.draw();
       this.treasure.drawTreasure();
+     if (this.player.collisionCheck(this.treasure)) {
+       this.treasure.setRandomPosition();
+       } 
   }
-
- 
-
 }
